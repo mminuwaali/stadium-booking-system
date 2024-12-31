@@ -5,10 +5,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("", include("landing.urls")),
-    # path("auth/", include("account.urls")),
-    # path("events/", include("events.urls")),
-    # path("booking/", include("booking.urls")),
+    path("", include("landing.urls")),
+    path("auth/", include("account.urls")),
+    path("events/", include("events.urls")),
+    path("booking/", include("booking.urls")),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
 
